@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Franklin Barber Show</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script>
+function showSection(id){
+    document.querySelectorAll('section').forEach(s=>s.style.display='none');
+    document.getElementById(id).style.display='block';
+}
+</script>
+</head>
+
+<body>
+<header class="navbar">
+  <img src="logo.png" class="logo">
+  <nav>
+    <a onclick="showSection('catalogo')">Catálogo</a>
+    <a onclick="showSection('redes')">Redes</a>
+    <a onclick="showSection('ubicacion')">Ubicación</a>
+  </nav>
+</header>
+
+<section id="bienvenida" class="hero">
+  <img src="logo.png" class="hero-bg">
+  <div class="hero-content">
+    <h1>Bienvenido a Franklin Barber Show</h1>
+    <p>Cortes modernos, flow y estilo</p>
+    <button onclick="showSection('catalogo')">Ver Catálogo</button>
+  </div>
+</section>
+
+<section id="catalogo" style="display:none">
+<h2>Catálogo</h2>
+<div class="grid">
+  <img src="foto1.png">
+  <img src="foto2.png">
+  <img src="foto3.png">
+  <img src="foto4.png">
+</div>
+
+<div class="videos">
+  <video controls src="video1.mp4"></video>
+</div>
+</section>
+
+<section id="redes" style="display:none">
+<h2>Redes Sociales</h2>
+<a class="btn" href="https://wa.me/18096351909" target="_blank">WhatsApp</a>
+<a class="btn" href="https://www.instagram.com/chankfhw?igsh=NHk2Z2V4YTZ1emp4" target="_blank">Instagram</a>
+<a class="btn" href="https://www.tiktok.com/@sr..franklin_barb?_r=1&_t=ZS-92JUg2fY0gR" target="_blank">TikTok</a>
+</section>
+
+<section id="ubicacion" style="display:none">
+<h2>Ubicación</h2>
+<a class="btn" href="https://maps.app.goo.gl/XqUKMh3aSjUBfwnu8" target="_blank">Ver en Google Maps</a>
+</section>
+
+<footer>© Franklin Barber Show</footer>
+</body>
+</html>

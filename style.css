@@ -1,0 +1,20 @@
+
+body{margin:0;font-family:Arial;background:#0b0b0b;color:#fff}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:10px 20px;background:#000}
+.navbar a{color:#f5c542;margin-left:15px;font-weight:bold;cursor:pointer}
+.logo{height:40px}
+.hero{height:90vh;display:flex;justify-content:center;align-items:center;text-align:center;position:relative}
+.hero-bg{position:absolute;opacity:.08;width:70%}
+.hero-content{z-index:1;animation:fadeIn 1.5s}
+button,.btn{padding:14px 28px;border:none;border-radius:30px;background:#f5c542;font-weight:bold;margin:10px;cursor:pointer}
+section{padding:40px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
+.grid img{width:100%;border-radius:12px;animation:zoom 1s}
+.videos video{width:100%;max-width:500px;border-radius:15px;margin-top:20px}
+footer{text-align:center;padding:20px;background:#000}
+@keyframes fadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1}}
+@keyframes zoom{from{transform:scale(.9)}to{transform:scale(1)}}
+@media(max-width:600px){
+  .hero h1{font-size:26px}
+  .navbar nav{font-size:14px}
+}
